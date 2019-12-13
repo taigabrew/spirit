@@ -1,0 +1,16 @@
+> 1%
+last 2 versions
+not ie <= 10
+not ie_mob <= 11
+not op_mini all
+not dead
+not bb >= 10
+not bb >= 7
+not op_mob >= 46
+not op_mob >= 12.1
+not baidu >= 7.12
+not android < 67
+not samsung >= 6.2
+not and_uc >= 11.8
+not and_qq >= 1.2
+not and_ff < 62

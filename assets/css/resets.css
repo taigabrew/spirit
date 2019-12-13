@@ -1,0 +1,54 @@
+html {
+  @apply font-sans;
+}
+
+html,
+body,
+#__nuxt,
+#__layout {
+  @apply relative;
+
+  @media (min-width: theme('screens.md')) {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
+
+html.is-safari,
+.is-safari body,
+.is-safari #__nuxt,
+.is-safari #__layout {
+  @apply overflow-hidden;
+}
+
+strong {
+  @apply font-semibold;
+}
+
+img {
+  @apply select-none;
+}
+
+::-moz-selection {
+  @apply text-white bg-black;
+}
+
+::selection {
+  @apply text-white bg-black;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0ms !important;
+    transition-duration: 100ms !important;
+  }
+}
+
+:focus,
+.focus-outline:focus {
+  outline: 1px dashed theme('colors.blue.500');
+  outline-offset: -1px;
+}
+
+.h-screen-mobile.h-screen-mobile {
+  height: calc(var(--vh, 1vh) * 100);
+}
