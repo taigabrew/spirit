@@ -1,0 +1,23 @@
+.c-text-area {
+  @apply w-full bg-gray-200 rounded border border-transparent transition-colors transition-325 transition-out-sine;
+
+  &:hover {
+    @apply bg-gray-300;
+  }
+
+  &:focus {
+    @apply border-gray-400 bg-gray-300;
+  }
+}
+
+.c-input {
+  @apply h-10 c-text-area;
+}
+
+.c-input[aria-invalid] {
+  @apply border-red-400;
+
+  .is-dark-mode & {
+    @apply border-red-600;
+  }
+}

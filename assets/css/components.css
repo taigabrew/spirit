@@ -1,0 +1,8 @@
+.c-case-description a {
+  @apply text-indigo-600 border-b border-indigo-300 transition-colors transition-in-sine transition-250;
+
+  &:hover,
+  &:focus {
+    @apply text-indigo-800 border-transparent;
+  }
+}

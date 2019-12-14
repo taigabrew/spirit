@@ -1,0 +1,29 @@
+.c-btn {
+  @apply rounded py-2 px-5 transition-325 transition-out-sine transition-all border-none;
+
+  &:hover,
+  &:focus {
+    @apply bg-gray-200;
+  }
+
+  &:focus {
+    @apply outline-none shadow-focus;
+  }
+
+  &:active {
+    @apply bg-transparent;
+  }
+}
+
+.c-btn--action {
+  @apply bg-indigo-500 text-white font-light tracking-wide;
+
+  &:hover,
+  &:focus {
+    @apply bg-indigo-600;
+  }
+
+  &:active {
+    @apply shadow-inner bg-indigo-500;
+  }
+}

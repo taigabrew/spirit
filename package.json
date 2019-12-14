@@ -1,7 +1,7 @@
 {
   "name": "spirit",
   "version": "0.0.0",
-  "description": "Умная поддержка",
+  "description": "Умная поддержка фигурантов «московского дела»",
   "author": "",
   "private": true,
   "scripts": {
@@ -16,12 +16,15 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "@vue/composition-api": "^0.3.4",
     "animejs": "^3.1.0",
+    "date-fns": "^2.8.1",
     "hammerjs": "^2.0.8",
     "nuxt": "^2.0.0",
     "nuxt-compress": "^1.0.2",
     "nuxt-purgecss": "^0.2.1",
     "pinia": "^0.0.2",
-    "stylelint-config-recommended": "^3.0.0"
+    "sanitize-html": "^1.20.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss-transitions": "^2.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

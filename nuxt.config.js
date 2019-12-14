@@ -4,7 +4,7 @@ import tailwindConfig from './tailwind.config'
 import pkg from './package'
 const colors = resolveConfig(tailwindConfig).theme.colors
 
-const siteTitle = 'Spirit'
+const siteTitle = 'Умная поддержка'
 
 export default {
   mode: 'spa',
@@ -28,7 +28,7 @@ export default {
         content: process.env.npm_package_description || ''
       },
       { hid: 'description', name: 'description', content: pkg.description },
-      { name: 'theme-color', content: colors.blue['500'] }
+      { name: 'theme-color', content: colors.indigo['500'] }
     ],
     link: [
       {
@@ -39,17 +39,17 @@ export default {
     ]
   },
   manifest: {
-    name: 'Spirit',
-    short_name: 'Spirit',
-    description: 'Умная поддержка',
-    background_color: colors.blue['100'],
-    theme_color: colors.blue['500'],
+    name: 'Умная поддержка',
+    short_name: 'Умная поддержка',
+    description: 'Умная поддержка фигурантов «московского дела»',
+    background_color: colors.indigo['100'],
+    theme_color: colors.indigo['500'],
     lang: 'ru'
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: colors.blue['400'], height: '.25rem' },
+  loading: { color: colors.indigo['400'], height: '.25rem' },
   /*
    ** Global CSS
    */
@@ -57,7 +57,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/composition-api'],
+  plugins: ['~/plugins/composition-api', '~/plugins/sanitize-html'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -65,9 +65,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/stylelint-module'
   ],
   /*
    ** Nuxt.js modules
