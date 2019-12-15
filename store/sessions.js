@@ -1,7 +1,7 @@
 import { createStore } from 'pinia'
 
 export const useSessionsStore = createStore(
-  'hearings',
+  'sessions',
   () => ({
     list: [
       {

@@ -1,7 +1,6 @@
 import resolveConfig from 'tailwindcss/resolveConfig'
 import tailwindConfig from './tailwind.config'
 
-import pkg from './package'
 const colors = resolveConfig(tailwindConfig).theme.colors
 
 const siteTitle = 'Умная поддержка'
@@ -27,7 +26,6 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
-      { hid: 'description', name: 'description', content: pkg.description },
       { name: 'theme-color', content: colors.indigo['500'] }
     ],
     link: [
@@ -74,7 +72,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     'nuxt-purgecss',
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Axios module configuration
