@@ -7,21 +7,30 @@ Web-клиент реализации [идеи для хакатона](https:/
 
 ### Что планируется реализовать
 Возможность записаться на заседание с помощью вашего имени пользователя Telegram.
+
 Возможность посмотреть информацию об обвиняемых, узнать номер счета чтобы помочь родным.
+
 Дополнительная фича: возможность написать письмо обвиняемому, чтобы можно было их потом распечатать и передать в СИ
-Сайт: [https://happy-hypatia-d16bf2.netlify.com/]
-Репозиторий: [https://github.com/taigabrew/spirit]
+
+Сайт: https://happy-hypatia-d16bf2.netlify.com/
+
+Репозиторий: https://github.com/taigabrew/spirit
+
 Готовность: Статичные данные, осталось подружить с API и поправить несколько мелочей. Пока без отправки письма.
 
 ## Админка
 Веб UI для управление данными для клиента
+
 Сайт: _Пока нет_
-Репозиторий: [https://github.com/taigabrew/spirit-admin]
+
+Репозиторий: https://github.com/taigabrew/spirit-admin
+
 Готовность: Общая разметка, управление локальным состоянием, компоненты для редакторов
 
 ## API
-Документация: [https://documenter.getpostman.com/view/7399175/SWEB1aYE?version=latest]
-Репозиторий: [https://bitbucket.org/AlexeyDatsenko/smart-support-web-api/]
+Документация: https://documenter.getpostman.com/view/7399175/SWEB1aYE?version=latest
+
+Репозиторий: https://bitbucket.org/AlexeyDatsenko/smart-support-web-api/
 
 ## Telegram bot
 Добавляет людей в групповой чат и считает сколько людей идет на заседание.
