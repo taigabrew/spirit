@@ -11,7 +11,11 @@
 }
 
 .c-input {
-  @apply h-10 c-text-area;
+  @apply h-12 c-text-area;
+
+  @media (min-width: theme('screens.md')) {
+    @apply h-10;
+  }
 }
 
 .c-input[aria-invalid] {
