@@ -23,7 +23,7 @@
     "nuxt-compress": "^1.0.2",
     "nuxt-purgecss": "^0.2.1",
     "pinia": "^0.0.2",
-    "sanitize-html": "^1.20.1",
+    "sanitize-html": "^2.3.2",
     "stylelint-config-recommended": "^3.0.0",
     "tailwindcss-transitions": "^2.1.0"
   },
